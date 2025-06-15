@@ -5,11 +5,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <img
           src={Logo}
           alt="Logo"
-          className="w-8 sm:w-10 md:w-12 h-8 sm:h-12 md:h-12"
+          className="w-9 sm:w-10 md:w-12 h-8 sm:h-12 md:h-12"
         />
         <ul className="hidden md:flex flex-row gap-10">
           <li>
