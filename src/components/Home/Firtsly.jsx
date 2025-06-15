@@ -1,0 +1,52 @@
+import React from "react";
+import Firstly1 from "../images/firstlyIMG.png";
+import Logo from "../images/Logo.png";
+
+const Firstly = () => {
+  return (
+    <section className="pt-20">
+      {/* Hero Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-yellow-300 w-full">
+        {/* Text Section */}
+        <div className="flex flex-col items-center md:items-start justify-center px-6 py-10 text-center md:text-left">
+          <h1 className="text-3xl font-bold max-w-md">
+            ENJOY OUR SOULFULLY SPICED CHICKEN MEALS
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <button className="bg-red-500 px-6 py-2 text-white rounded-xl">
+              Order Now
+            </button>
+            <button className="bg-red-500 px-6 py-2 text-white rounded-xl">
+              Find a Store
+            </button>
+          </div>
+        </div>
+
+        {/* Image Section */}
+        <div className="flex justify-center items-center py-6">
+          <img
+            src={Firstly1}
+            alt="Chicken Meal"
+            className="w-60 h-60 rounded-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Info Banner Section */}
+      <div className="w-full bg-red-500 py-4 grid place-items-center">
+        <div className="grid grid-cols-[auto_1fr] items-center gap-3 animate-marquee">
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-6 h-6 rounded-full border border-yellow-600"
+          />
+          <span className="text-white text-sm">
+            Order online from 9am to 8pm daily
+          </span>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Firstly;
