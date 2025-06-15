@@ -5,7 +5,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 sm:px-6 py-4 flex items-center justify-between">
         <img
           src={Logo}
           alt="Logo"
@@ -32,7 +32,10 @@ const Header = () => {
           </li>
         </ul>
 
-        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           ☰
         </button>
       </div>
