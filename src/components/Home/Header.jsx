@@ -33,7 +33,7 @@ const Header = () => {
         </ul>
 
         <button
-          className="md:hidden text-2xl"
+          className="text-3xl md:hidden "
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
