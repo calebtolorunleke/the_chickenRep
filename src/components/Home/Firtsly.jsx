@@ -23,18 +23,18 @@ const Firstly = () => {
         </div>
 
         {/* Image Content */}
-        <div className="flex justify-center items-center py-10">
+        <div className="flex justify-center items-center py-3 md:py-10">
           <img
             src={Firstly1}
             alt="Chicken Meal"
-            className="w-60 h-60 rounded-full object-cover"
+            className="w-30 h-30 md:w-60 md:h-60 rounded-full object-cover"
           />
         </div>
       </div>
 
       {/* Info Banner Section */}
       <div className="w-full bg-red-500 py-4 grid place-items-center overflow-hidden">
-        <div className="flex items-center gap-3 px-4">
+        <div className="flex items-center gap-3 px-4 animate-marquee">
           <img
             src={Logo}
             alt="Logo"
