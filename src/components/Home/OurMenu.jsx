@@ -43,7 +43,7 @@ const OurMenu = () => {
         ))}
       </div>
 
-      <div className="flex flex-row items-right">
+      <div className="flex flex-row justify-end gap-3">
         <h2>Others</h2>
         <span>→</span>
       </div>
