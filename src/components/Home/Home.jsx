@@ -4,6 +4,7 @@ import Firtsly from "./Firtsly";
 import OurMenu from "./OurMenu";
 import SpecialOffer from "./SpecialOffer";
 import OurPeople from "./OurPeople";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <OurMenu />
       <SpecialOffer />
       <OurPeople />
+      <Footer />
     </div>
   );
 };

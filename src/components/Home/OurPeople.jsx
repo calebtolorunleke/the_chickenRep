@@ -17,14 +17,17 @@ const OurPeople = () => {
       {People.map((Peopletake, index) => (
         <section
           key={index}
-          className="flex flex-row items-center justify-center gap-45 pt-5"
+          className="flex flex-row items-center justify-center gap-3 md:gap-20 pt-5 px-5"
         >
           <img
             src={Peopletake.PeopleIMG}
             alt={Peopletake.PeopleText}
-            className="w-50 h-50 object-cover rounded-xl"
+            className="w-50 h-40  md:w-100 md:h-70 object-cover rounded"
           />
-          <p className="text-gray-800 max-w-md">{Peopletake.PeopleText}</p>
+          <div>
+            <p className="text-gray-800 max-w-md">{Peopletake.PeopleText}</p>{" "}
+            <span className="font-bold">Read More...</span>
+          </div>
         </section>
       ))}
     </>
